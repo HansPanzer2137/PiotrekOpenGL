@@ -98,7 +98,7 @@ def main():
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
 
-    image = Image.open("res/smiley.png")
+    image = Image.open("data/Piotrek.jpg")
     #img_data = numpy.array(list(image.getdata()), numpy.uint8)
     flipped_image = image.transpose(Image.FLIP_TOP_BOTTOM)
     img_data = flipped_image.convert("RGBA").tobytes()
